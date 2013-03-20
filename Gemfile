@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 
+group :production do
+  gem 'pg'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -36,11 +39,11 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem 'foreman'
+#gem 'foreman'
 
-gem 'spreadsheet'
-gem 'google_drive'
-gem 'openurl'
-gem 'execjs'
-gem 'therubyracer'
-gem 'libv8', '~>3.11.8'
+#gem 'spreadsheet'
+#gem 'google_drive'
+#gem 'openurl'
+#gem 'execjs'
+#gem 'therubyracer'
+#gem 'libv8', '~>3.11.8'
